@@ -27,10 +27,8 @@ spec:
   - http:
       paths:
       - backend:
-          service:
-            name: mysql
-            port:
-              number: 3306
+          serviceName: mysql
+          servicePort: 3306
         path: /
         pathType: ImplementationSpecific
       
