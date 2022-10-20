@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
 spec:
   type: LoadBalancer
   selector:
@@ -9,7 +11,7 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 80
+      port: 3306
       targetPort: 3306
 ---	  
 apiVersion: apps/v1
