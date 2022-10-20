@@ -7,9 +7,10 @@ spec:
   selector:
     app: mysql
   ports:
-    - port: 3306
+    - name: http
+      protocol: TCP
+      port: 80
       targetPort: 3306
-      nodePort: 30007
 ---	  
 apiVersion: apps/v1
 kind: Deployment
