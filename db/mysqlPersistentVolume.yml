@@ -16,7 +16,7 @@ spec:
 
   capacity:
 
-    storage: 20Gi
+    storage: 1Gi
 
   accessModes:
 
@@ -48,4 +48,4 @@ spec:
 
     requests:
 
-      storage: 20Gi
+      storage: 1Gi
